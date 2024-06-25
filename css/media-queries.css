@@ -114,6 +114,10 @@ background-position: center top !important;
 .team-member{
   margin-bottom: 20px;
 }	
+
+.pricing_desktop{
+
+}
 	
 }
 
@@ -220,6 +224,16 @@ background-position: center top !important;
 .footer-single {
   margin-bottom: 30px;
 }
+
+.pricing_desktop{
+ width: 400px;
+ margin-left: 20px;
+}
+
+.pricing_div{
+  display: block;
+}
+
 
 }
 
