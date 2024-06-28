@@ -48,6 +48,20 @@
 
 </head>
 
+<style>
+    .hidden {
+        display: none;
+    }
+
+    /* #toggle-btn {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    #toggle-btn:hover {
+        background-color: #0056b3;
+        color: #fff;
+    } */
+</style>
+
 <body id="body">
 
     <!-- preloader -->
@@ -92,11 +106,11 @@
             <nav class="collapse navbar-collapse navbar-right" role="navigation">
                 <ul id="nav" class="nav navbar-nav">
                     <li class="current"><a href="#body">Home</a></li>
-                    <li ><a href="#team">About Us</a></li>
+                    <li ><a href="#aboutUs">About Us</a></li>
                     <li><a href="#features">Features</a></li>
-                    <li><a href="#works">Work</a></li>
-                    <li><a href="#team">Team</a></li>
-                    <li><a href="http://google.com">Contact</a></li>
+                    <li><a href="#applicationview">Application View</a></li>
+                    <li><a href="#invoice">Invoice View</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <!-- /main nav -->
@@ -127,21 +141,22 @@
             <div class="carousel-inner" role="listbox">
 
                 <!-- single slide -->
-                <div class="item active" style="background-image: url(img/billing-bannner.jpg);">
+                <div class="item active" style="width: 100%; height: 500px; background-image: url('img/blend_vista_original.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    
                     <div class="carousel-caption">
-                        <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: black;">
-                            WELCOME TO<span> JOIN BILLS</span>!</h2>
-                        <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span
-                                class="color">/Creating</span> Invoice</h3>
-                        <p data-wow-duration="1000ms" class="wow slideInRight animated">We are a team of professionals to help you
+                        <!-- <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: black;">
+                            WELCOME TO<span> JOIN BILLS</span>!</h2> -->
+                        <!-- <h3 data-wow-duration="1000ms" class="wow slideInLeft animated"><span
+                                class="color">/Creating</span> Invoice</h3> -->
+                        <p style="color: green; padding-top: 180px;" data-wow-duration="1000ms" class="wow slideInRight animated">Powered By BLEND VISTA VENTURES
                         </p>
 
-                        <ul class="social-links text-center">
+                        <!-- <ul class="social-links text-center">
                             <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
                             <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
                             <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
                             <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
                 <!-- end single slide -->
@@ -150,18 +165,18 @@
                 <div class="item" style="background-image: url(img/jblogo2.png); ">
                     <div class="carousel-caption">
                         <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">
-                            Welcome To<span>Join Bills</span>!</h2>
+                            Welcome To<span> Join Bills</span>!</h2>
                         <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span
-                                class="color">/creative</span>Billing Platform</h3>
-                        <p data-wow-duration="500ms" class="wow slideInRight animated">We are a team of professionals
+                                class="color">New Age</span>Billing Platform</h3>
+                        <p data-wow-duration="500ms" class="wow slideInRight animated">Powered By BLEND VISTA VENTURES
                         </p>
 
-                        <ul class="social-links text-center">
+                        <!-- <ul class="social-links text-center">
                             <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
                             <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
                             <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
                             <li><a href=""><i class="fa fa-dribbble fa-lg"></i></a></li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
                 <!-- end single slide -->
@@ -194,6 +209,8 @@
 
 
 
+
+
     <!--
         Features
         ==================================== -->
@@ -211,7 +228,7 @@
                 <div  class="col-md-4 wow fadeInLeft" data-wow-duration="500ms">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fa fa-github fa-2x"></i>
+                            <i style="font-size: 30px;" class="fa-solid fa-file-invoice"></i>
                         </div>
 
                         <div class="service-desc">
@@ -227,7 +244,7 @@
                 <div class="col-md-4 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fa fa-pencil fa-2x"></i>
+                            <i style="font-size: 30px;" class="fa-solid fa-file-invoice"></i>
                         </div>
 
                         <div class="service-desc">
@@ -257,7 +274,7 @@
                 <div class="col-md-4 wow fadeInRight"  data-wow-duration="500ms" data-wow-delay="900ms">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fa fa-bullhorn fa-2x"></i>
+                            <i style="font-size: 30px;" class="fa-solid fa-file-invoice"></i>
                         </div>
 
                         <div class="service-desc">
@@ -277,7 +294,7 @@
                 <div class="col-md-4 wow fadeInRight" style="margin-top: 50px;"  data-wow-duration="500ms" data-wow-delay="900ms">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fa fa-bullhorn fa-2x"></i>
+                            <i style="font-size: 30px;" class="fa-solid fa-file-invoice"></i>
                         </div>
 
                         <div class="service-desc">
@@ -295,7 +312,7 @@
                  <div class="col-md-4 wow fadeInRight" style="margin-top: 50px;" data-wow-duration="500ms" data-wow-delay="900ms">
                     <div class="service-item">
                         <div class="service-icon">
-                            <i class="fa fa-bullhorn fa-2x"></i>
+                            <i style="font-size: 30px;" class="fa-solid fa-file-invoice"></i>
                         </div>
 
                         <div class="service-desc">
@@ -326,142 +343,8 @@
         ==================================== -->
 
 
-    <!--
-        Our Works
-        ==================================== -->
 
-    <section id="works" class="works clearfix" style="background-color: #f4f7f9;">
-        <div class="container">
-            <div class="row">
-
-                <div class="sec-title text-center">
-                    <h2>Works</h2>
-                    <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
-                </div>
-
-                <div class="sec-sub-title text-center">
-                    <p>We provide various services</p>
-                </div>
-
-                <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
-                    <ul class="text-center">
-                        <li><a href="javascript:;" data-filter="all" class="active filter">All Invoices</a></li>
-                        <li><a href="javascript:;" data-filter=".wholesale" class="filter">Wholesale Invoice</a></li>
-                        <li><a href="javascript:;" data-filter=".retail" class="filter">Retail Invoice</a></li>
-                        <!-- <li><a href="javascript:;" data-filter=".logo-design" class="filter">A5 Invoices</a></li>
-                        <li><a href="javascript:;" data-filter=".photography" class="filter">Sample Invoices</a></li> -->
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="project-wrapper">
-
-            
-
-                <div class="row" style="display: flex; justify-content: space-between;" >
-
-                    <figure class="mix work-item wholesale">
-                        <img width="100%" height="80%" src="img/works/wholesaleBill1.jpeg" alt="">
-                        <figcaption class="overlay">
-                            <a class="fancybox" rel="works" title="Wholesale Bill 1" href="img/works/wholesaleBill1.jpeg"><i
-                                    class="fa fa-eye fa-lg"></i></a>
-                            <h4>Wholesale Invoice</h4>
-                            <p>This is a sample of the wholesale invoice of Join Bills.</p>
-                        </figcaption>
-                    </figure>
-        
-                    <figure class="mix work-item retail">
-                        <img width="100%" height="80%" src="img/works/retailBill1.jpeg" alt="">
-                        <figcaption class="overlay">
-                            <a class="fancybox" rel="works" title="Retail Bill 1" href="img/works/retailBill1.jpeg"><i
-                                    class="fa fa-eye fa-lg"></i></a>
-                            <h4>Retail Invoice</h4>
-                            <p>This is a sample of the retail invoice of Join Bills.</p>
-                        </figcaption>
-                    </figure>
-        
-                    <figure class="mix work-item wholesale">
-                        <img width="100%" height="80%" src="img/works/wholesaleBill2.jpeg" alt="">
-                        <figcaption class="overlay">
-                            <a class="fancybox" rel="works" title="Wholesale Bill 3" href="img/works/wholesaleBill2.jpeg"><i
-                                    class="fa fa-eye fa-lg"></i></a>
-                            <h4>Wholesale Invoice</h4>
-                            <p>This is a sample of the wholesale invoice of Join Bills.</p>
-                        </figcaption>
-                    </figure>
-
-                </div>
-
-                <div class="row" style="display: flex; justify-content: space-between; margin-top: 20px;"  >
-
-                    <figure class="mix work-item retail">
-                        <img width="100%"  src="img/works/retailBill2.jpeg" alt="">
-                        <figcaption class="overlay">
-                            <a class="fancybox" rel="works" title="Retail Bill 1" href="img/works/retailBill2.jpeg"><i
-                                    class="fa fa-eye fa-lg"></i></a>
-                            <h4>Retail Invoice</h4>
-                            <p>This is a sample of the retail invoice of Join Bills.</p>
-                        </figcaption>
-                    </figure>
-        
-                    <figure class="mix work-item wholesale">
-                        <img width="100%" height="80%" src="img/works/wholesaleBill3.jpeg" alt="">
-                        <figcaption class="overlay">
-                            <a class="fancybox" rel="works" title="Retail Bill 2" href="img/works/wholesaleBill3.jpeg"><i
-                                    class="fa fa-eye fa-lg"></i></a>
-                            <h4>Wholesale Invoice</h4>
-                            <p>This is a sample of the wholesale invoice of Join Bills.</p>
-                        </figcaption>
-                    </figure>
-        
-                    <figure class="mix work-item retail">
-                        <img width="100%" height="80%" src="img/works/retailBill3.jpeg" alt="">
-                        <figcaption class="overlay">
-                            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/retailBill3.jpeg"><i
-                                    class="fa fa-eye fa-lg"></i></a>
-                            <h4>Retail Invoice</h4>
-                            <p>This is a sample of the retail invoice of Join Bills.</p>
-                        </figcaption>
-                    </figure>
-                </div>
- 
-
-           
-
-            <!-- <figure class="mix work-item logo-design">
-                <img width="100%" height="80%" src="img/works/A4-Size-Invoice-Free-PSD-Template-thumbnail.jpg" alt="">
-                <figcaption class="overlay">
-                    <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-7.jpg"><i
-                            class="fa fa-eye fa-lg"></i></a>
-                    <h4>Labore et dolore magnam</h4>
-                    <p>Photography</p>
-                </figcaption>
-            </figure>
-
-            <figure class="mix work-item photography">
-                <img src="img/works/A4-Invoice-Template-1.jpg" alt="">
-                <figcaption class="overlay">
-                    <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-8.jpg"><i
-                            class="fa fa-eye fa-lg"></i></a>
-                    <h4>Labore et dolore magnam</h4>
-                    <p>Photography</p>
-                </figcaption>
-            </figure> -->
-
-           
-
-           
-
-         
-
-        </div>
-
-
-    </section>
-
-    <!--
+         <!--
         End Our Works
         ==================================== -->
 
@@ -469,10 +352,9 @@
         Meet Our Team
         ==================================== -->
 
-    <section id="team" class="team" style="background-color: #f4f7f9;">
-
-        <div class="container">
-            <div class="row">
+        <section id="applicationview" class="team" style="background-color: #f4f7f9;">
+            <div class="container">
+                <div class="row">
 
         <!-- Pricing Tab Starts -->
 
@@ -731,6 +613,10 @@
             <div class="sec-title text-center">
                 <h2>Mobile And Desktop Applications</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+                <div class="text-center">
+                    <button id="toggle-btn" class="btn btn-primary" style="border-radius: 20px;">View All</button>
+                </div>
+
             </div>
 
             <div class="sec-sub-title text-center">
@@ -739,45 +625,38 @@
 
 
                 <!-- single member -->
-                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
-                    data-wow-duration="500ms">
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
                     <div class="member-thumb">
-                        <img width="100%" style="height: 280px;" src="img/team/desktop/desktop1.jpg" alt="Team Member" class="img-responsive">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/desktop1copy.jpg" alt="Team Member" class="img-responsive">
                         <figcaption class="overlay">
-                            <a class="fancybox" rel="works" title="Retail Bill 2" href="img/team/desktop/desktop1.jpg"><i
-                                class="fa fa-eye fa-lg"></i></a>
-                            <h5>Sample Name </h5>
-                            <p>sample text</p>
-                            <ul class="social-links text-center">
-                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                            </ul>
+
+                            <h5 style="margin-top: 30px;" >Dashboard View</h5>
+                            <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/desktop1copy.jpg"><i style="font-size: 30px;" class="fa fa-eye fa-lg"></i></a>
+                            
+                            <!-- <p>sample text</p> -->
                         </figcaption>
                     </div>
+
                     <!-- <h4>John Filmr Doe</h4>
                     <span>Managing Director</span> -->
-                </figure> 
+                </figure>
                 <!-- end single member -->
 
                 <!-- single member -->
-                <!-- <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
-                    data-wow-duration="500ms" data-wow-delay="300ms">
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
                     <div class="member-thumb">
-                        <img src="img/team/member-2.png" alt="Team Member" class="img-responsive">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/desktop2copy.jpg" alt="Team Member" class="img-responsive">
                         <figcaption class="overlay">
-                            <h5>Sample Name </h5>
-                            <p>sample text</p>
-                            <ul class="social-links text-center">
-                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                            </ul>
+                            <h5 style="margin-top: 30px;" >Inventory View</h5>
+                            <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/desktop2copy.jpg"><i style="font-size: 30px;" class="fa fa-eye fa-lg"></i></a>
+                            
+                            <!-- <p>sample text</p> -->
                         </figcaption>
                     </div>
-                    <h4>Martin Matrone</h4>
-                    <span>Lead Developer</span>
-                </figure> -->
+
+                    <!-- <h4>John Filmr Doe</h4>
+                    <span>Managing Director</span> -->
+                </figure>
                 <!-- end single member -->
 
                 <!-- single member -->
@@ -801,104 +680,370 @@
                 <!-- end single member -->
 
                 <!-- single member -->
-                <!-- <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
-                    data-wow-duration="500ms" data-wow-delay="900ms">
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
                     <div class="member-thumb">
-                        <img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/desktop3copy.jpg" alt="Team Member" class="img-responsive">
                         <figcaption class="overlay">
-                            <h5>Sample Name </h5>
-                            <p>sample text</p>
-                            <ul class="social-links text-center">
-                                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                            </ul>
+                            <h5 style="margin-top: 30px;" >Sales View</h5>
+                            <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/desktop3copy.jpg"><i style="font-size: 30px;" class="fa fa-eye fa-lg"></i></a>
+                           
+                            <!-- <p>sample text</p> -->
                         </figcaption>
                     </div>
-                    <h4>John Filmr Doe</h4>
-                    <span>Managing Director</span>
-                </figure> -->
 
-                <!-- <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
-                data-wow-duration="500ms" data-wow-delay="900ms">
-                <div class="member-thumb">
-                    <img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-                    <figcaption class="overlay">
-                        <h5>Sample Name </h5>
-                        <p>sample text</p>
-                        <ul class="social-links text-center">
-                            <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                        </ul>
-                    </figcaption>
-                </div>
-                <h4>John Filmr Doe</h4>
-                <span>Managing Director</span>
-            </figure> -->
+                    <!-- <h4>John Filmr Doe</h4>
+                    <span>Managing Director</span> -->
+                </figure>
 
-            <!-- <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
-            data-wow-duration="500ms" data-wow-delay="900ms">
-            <div class="member-thumb">
-                <img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-                <figcaption class="overlay">
-                    <h5>Sample Name </h5>
-                    <p>sample text</p>
-                    <ul class="social-links text-center">
-                        <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                        <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                        <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                    </ul>
-                </figcaption>
-            </div>
-            <h4>John Filmr Doe</h4>
-            <span>Managing Director</span>
-        </figure> -->
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="500ms">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/desktop4copy.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+                            <h5 style="margin-top: 30px;" >Purchase View</h5>
+                            <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/desktop4copy.jpg"><i style="font-size: 30px;" class="fa fa-eye fa-lg"></i></a>
+                            
+                            <!-- <p>sample text</p> -->
+                        </figcaption>
+                    </div>
 
-        <!-- <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
-        data-wow-duration="500ms" data-wow-delay="900ms">
-        <div class="member-thumb">
-            <img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-            <figcaption class="overlay">
-                <h5>Sample Name </h5>
-                <p>sample text</p>
-                <ul class="social-links text-center">
-                    <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                    <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                    <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-                </ul>
-            </figcaption>
-        </div>
-        <h4>John Filmr Doe</h4>
-        <span>Managing Director</span>
-    </figure> -->
+                    <!-- <h4>John Filmr Doe</h4>
+                    <span>Managing Director</span> -->
+                </figure>
 
-    <!-- <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center wow fadeInUp animated"
-    data-wow-duration="500ms" data-wow-delay="900ms">
-    <div class="member-thumb">
-        <img src="img/team/member-1.png" alt="Team Member" class="img-responsive">
-        <figcaption class="overlay">
-            <h5>Sample Name </h5>
-            <p>sample text</p>
-            <ul class="social-links text-center">
-                <li><a href=""><i class="fa fa-twitter fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-facebook fa-lg"></i></a></li>
-                <li><a href=""><i class="fa fa-google-plus fa-lg"></i></a></li>
-            </ul>
-        </figcaption>
-    </div>
-    <h4>John Filmr Doe</h4>
-    <span>Managing Director</span>
-</figure> -->
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center hidden" style="margin-top: 40px;">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/desktop5copy.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+
+                            <h5 style="margin-top: 30px;" >Expense View</h5>
+                            <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/desktop5copy.jpg"><i style="font-size: 30px;" class="fa fa-eye fa-lg"></i></a>
+                            
+                            <!-- <p>sample text</p> -->
+                        </figcaption>
+                    </div>
+                </figure>
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center hidden" style="margin-top: 40px;">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/desktop6copy.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+
+                            <h5 style="margin-top: 30px;" >Ledger View</h5>
+                            <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/desktop6copy.jpg"><i style="font-size: 30px;" class="fa fa-eye fa-lg"></i></a>
+                            
+                            <!-- <p>sample text</p> -->
+                        </figcaption>
+                    </div>
+                </figure>
+
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center  hidden" style="margin-top: 40px;">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/desktop7copy.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+
+                            <h5 style="margin-top: 30px;" >Profile View</h5>
+                            <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/desktop7copy.jpg"><i style="font-size: 30px;" class="fa fa-eye fa-lg"></i></a>
+                            
+                            <!-- <p>sample text</p> -->
+                        </figcaption>
+                    </div>
+                </figure>
+
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center hidden" style="margin-top: 40px;">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/desktop8copy.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/desktop8copy.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                            <h5>Sample Name </h5>
+                            <p>sample text</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+
+                <!-- <div class="team-member text-center hidden">
+                    <h2  style="margin-top: 40px;" >Mobile And Desktop Applications</h2>
+                   
+                    
+    
+                </div> -->
+
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center hidden" style="margin-top: 40px;">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/mobile1.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Mobile View Full Screen" href="img/team/desktop/mobile1.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                            <h5>Sample Name </h5>
+                            <p>sample text</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center hidden" style="margin-top: 40px;">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/mobile2.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/mobile2.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                            <h5>Sample Name </h5>
+                            <p>sample text</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center hidden" style="margin-top: 40px;">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/mobile3.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/mobile3.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                            <h5>Sample Name </h5>
+                            <p>sample text</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center hidden" style="margin-top: 40px;">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/mobile4.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Mobile View Full Screen" href="img/team/desktop/mobile4.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                            <h5>Sample Name </h5>
+                            <p>sample text</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center hidden" style="margin-top: 40px;">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/mobile5.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Mobile View Full Screen" href="img/team/desktop/mobile5.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                            <h5>Sample Name </h5>
+                            <p>sample text</p>
+                        </figcaption>
+                    </div>
+                </figure>
+
+
+                <figure class="team-member col-md-3 col-sm-6 col-xs-12 text-center hidden" style="margin-top: 40px;">
+                    <div class="member-thumb">
+                        <img width="100%" style="height: 280px;" src="img/team/desktop/mobile6.jpg" alt="Team Member" class="img-responsive">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Mobile View Full Screen" href="img/team/desktop/mobile6.jpg"><i class="fa fa-eye fa-lg"></i></a>
+                            <h5>Sample Name </h5>
+                            <p>sample text</p>
+                        </figcaption>
+                    </div>
+                </figure>
                 <!-- end single member -->
-<!-- 
+
+               
             </div>
-        </div> -->
+        </div>
     </section>
 
     <!--
         End Meet Our Team
         ==================================== -->
+
+
+
+
+    <!--
+        Our Works
+        ==================================== -->
+
+    <section id="invoice" class="works clearfix" style="background-color: #f4f7f9;">
+        <div class="container">
+            <div class="row">
+
+                <div class="sec-title text-center">
+                    <h2>Works</h2>
+                    <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+                </div>
+
+                <div class="sec-sub-title text-center">
+                    <p>We provide various services</p>
+                </div>
+
+                <div class="work-filter wow fadeInRight animated" data-wow-duration="500ms">
+                    <ul class="text-center">
+                        <li><a href="javascript:;" data-filter="all" class="active filter">All Invoices</a></li>
+                        <li><a href="javascript:;" data-filter=".wholesale" class="filter">Wholesale Invoice</a></li>
+                        <li><a href="javascript:;" data-filter=".retail" class="filter">Retail Invoice</a></li>
+                        <!-- <li><a href="javascript:;" data-filter=".logo-design" class="filter">A5 Invoices</a></li>
+                        <li><a href="javascript:;" data-filter=".photography" class="filter">Sample Invoices</a></li> -->
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="project-wrapper">
+
+            
+
+                <div class="row" style="display: flex; justify-content: space-between;" >
+
+                    <figure class="mix work-item wholesale">
+                        <img width="100%" height="80%" src="img/works/wholesaleBill1.jpeg" alt="">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Wholesale Bill 1" href="img/works/wholesaleBill1.jpeg"><i
+                                    class="fa fa-eye fa-lg"></i></a>
+                            <h4>Wholesale Invoice</h4>
+                            <p>This is a sample of the wholesale invoice of Join Bills.</p>
+                        </figcaption>
+
+                       
+                    </figure>
+        
+                    <figure class="mix work-item retail">
+                        <img width="100%" height="80%" src="img/works/retailBill1.jpeg" alt="">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Retail Bill 1" href="img/works/retailBill1.jpeg"><i
+                                    class="fa fa-eye fa-lg"></i></a>
+                            <h4>Retail Invoice</h4>
+                            <p>This is a sample of the retail invoice of Join Bills.</p>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="mix work-item wholesale">
+                        <img width="100%" height="80%" src="img/works/wholesaleBill2.jpeg" alt="">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Wholesale Bill 3" href="img/works/wholesaleBill2.jpeg"><i
+                                    class="fa fa-eye fa-lg"></i></a>
+                            <h4>Wholesale Invoice</h4>
+                            <p>This is a sample of the wholesale invoice of Join Bills.</p>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+                <div class="row" style="display: flex; justify-content: space-between; margin-top: 20px;"  >
+
+                    <figure class="mix work-item retail">
+                        <img width="100%"  src="img/works/retailBill2.jpeg" alt="">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Retail Bill 1" href="img/works/retailBill2.jpeg"><i
+                                    class="fa fa-eye fa-lg"></i></a>
+                            <h4>Retail Invoice</h4>
+                            <p>This is a sample of the retail invoice of Join Bills.</p>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="mix work-item wholesale">
+                        <img width="100%" height="80%" src="img/works/wholesaleBill3.jpeg" alt="">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Retail Bill 2" href="img/works/wholesaleBill3.jpeg"><i
+                                    class="fa fa-eye fa-lg"></i></a>
+                            <h4>Wholesale Invoice</h4>
+                            <p>This is a sample of the wholesale invoice of Join Bills.</p>
+                        </figcaption>
+                    </figure>
+        
+                    <figure class="mix work-item retail">
+                        <img width="100%" height="80%" src="img/works/retailBill3.jpeg" alt="">
+                        <figcaption class="overlay">
+                            <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/retailBill3.jpeg"><i
+                                    class="fa fa-eye fa-lg"></i></a>
+                            <h4>Retail Invoice</h4>
+                            <p>This is a sample of the retail invoice of Join Bills.</p>
+                        </figcaption>
+                    </figure>
+                </div>
+ 
+
+           
+
+            <!-- <figure class="mix work-item logo-design">
+                <img width="100%" height="80%" src="img/works/A4-Size-Invoice-Free-PSD-Template-thumbnail.jpg" alt="">
+                <figcaption class="overlay">
+                    <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-7.jpg"><i
+                            class="fa fa-eye fa-lg"></i></a>
+                    <h4>Labore et dolore magnam</h4>
+                    <p>Photography</p>
+                </figcaption>
+            </figure>
+
+            <figure class="mix work-item photography">
+                <img src="img/works/A4-Invoice-Template-1.jpg" alt="">
+                <figcaption class="overlay">
+                    <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/item-8.jpg"><i
+                            class="fa fa-eye fa-lg"></i></a>
+                    <h4>Labore et dolore magnam</h4>
+                    <p>Photography</p>
+                </figcaption>
+            </figure> -->
+
+           
+
+           
+
+         
+
+        </div>
+
+
+    </section>
+
+
+
+
+    <!-- COntact Us Section -->
+
+    <section id="contact"  class="contact works clearfix" style="background-color: #f4f7f9;">
+        <div class="container" style="background-color: #f4f7f9;">
+            <div class="sec-title text-center">
+                <h2>Contact Us</h2>
+                <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+            </div>
+
+            <div class="sec-sub-title text-center">
+                <p>Feel free to contact us. We are always here to help you.</p>
+            </div>
+
+
+            <div class="row mt-5" >
+
+                <div class="col-lg-12">
+                  <div class="info" style="background-color: #f4f7f9;">
+                    <div class="address">
+                        <i class="fa-solid fa-location-dot"></i>
+                      <h4>Location:</h4>
+                      <p>G3 Pure business Center <br>
+                    Kochi <br>
+                Kerala <br>
+            682018</p>
+                    </div>
+      
+                    <div class="email">
+                        <i class="fa-regular fa-envelope"></i>
+                      <h4>Gmail:</h4>
+                      
+                      <p>joinbillsdirector@gmail.com</p>
+                    </div>
+      
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                      <h4>Call:</h4>
+                      <div style="display: flex;align-items: center;justify-content: center;width: 120px;" >
+                        <a style="color: black;" href="tel:8113902206">8113902206</a>
+                      </div>
+                     
+                    </div>
+      
+                   
+      
+                  </div>
+      
+                </div>
+            </div>
+
+        </div>
+
+        </section>
+
+   
 
     <!--
         Some fun facts
@@ -1053,29 +1198,47 @@
                         <img  src="img/jblogo.png" width="70%" alt="">
                         <p  style="text-align: center; margin-left: -28px;" ></p>
                     </div>
+                    <div class="phone">
+                        <a target="_blank" aria-label="Message Us" href="https://wa.me/8113902206"><img width="200px" height="45px" src="./img/300768190_383340503990757_1334850925137629076_n/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteSmall.png" alt=""></a>
+                      </div>
+
+                    <div>
+
+                        <!-- <div class="social-links mt-3" style="display: flex;align-items: center;justify-content: center;width: 250px;"> -->
+                            <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+                            <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/ananthapuriguards?igsh=dm1xdGw2NXNlMnJj" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" aria-label="Message Us" href="https://wa.me/916238338400" class="instagram"><i class="fa-brands fa-whatsapp"></i></a> -->
+                            <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
+                          <!-- </div> -->
+
+                    </div>
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
                     data-wow-delay="300ms">
-                    <div class="footer-single">
+                    <!-- <div class="footer-single">
                         <h6>Subscribe </h6>
                         <form action="#" class="subscribe">
                             <input type="text" name="subscribe" id="subscribe">
                             <input type="submit" value="&#8594;" id="subs">
                         </form>
                         <p>eusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
                     data-wow-delay="600ms">
                     <div class="footer-single">
-                        <h6>Explore</h6>
+                        <h6>Useful Links</h6>
                         <ul>
-                            <li><a href="#">Inside Us</a></li>
-                            <li><a href="#">Flickr</a></li>
-                            <li><a href="#">Google</a></li>
-                            <li><a href="#">Forum</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#aboutUs">About Us</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#applicationview">Application View</a></li>
+                            <li><a href="#invoice">Invoice View</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1085,10 +1248,10 @@
                     <div class="footer-single">
                         <h6>Support</h6>
                         <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Market Blog</a></li>
-                            <li><a href="#">Help Center</a></li>
-                            <li><a href="#">Pressroom</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li>Reach us: joinbillsdirector@gmail.com</li>
+                            <!-- <li><a href="#">Help Center</a></li>
+                            <li><a href="#">Pressroom</a></li> -->
                         </ul>
                     </div>
                 </div>
@@ -1097,8 +1260,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <p class="copyright text-center">
-                        Copyright © 2024 JUST BILLS. All rights reserved. <br>
-                        Designed & developed by -------
+                        Copyright © 2024 Join BILLS. All rights reserved. <br>
+                        Powered By Blend Vista Ventures
+                        <!-- Designed & developed by ------- -->
                     </p>
                 </div>
             </div>
@@ -1144,6 +1308,27 @@
         }
         );
         wow.init();
+
+        document.getElementById('toggle-btn').addEventListener('click', function() {
+        var hiddenMembers = document.querySelectorAll('.team-member.hidden');
+        var visibleMembers = document.querySelectorAll('.team-member:not(.hidden)');
+        var button = this;
+
+        if (hiddenMembers.length > 0) {
+            // Show all hidden members
+            hiddenMembers.forEach(function(member) {
+                member.classList.remove('hidden');
+            });
+            button.textContent = 'Collapse Now';
+        } else {
+            // Hide members beyond the first 4
+            for (var i = 4; i < visibleMembers.length; i++) {
+                visibleMembers[i].classList.add('hidden');
+            }
+            button.textContent = 'View All';
+        }
+    });
+
     </script>
     <!-- Custom Functions -->
     <script src="js/custom.js"></script>
