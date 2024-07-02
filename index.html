@@ -62,6 +62,23 @@
         background-color: #0056b3;
         color: #fff;
     } */
+
+.imageDesk{
+    object-fit: contain;
+}
+
+.imageMobile{
+    object-fit: contain;
+}
+
+    @media (max-width: 767px) {
+    .team-member1 img {
+        width: 100%;
+        object-fit: contain;
+        height: auto;
+    }
+}
+
 </style>
 
 <body id="body">
@@ -377,18 +394,15 @@
             </div>
             <div class="container">
                 <div class="row">
-                    <figure class="team-member col-md-8 col-lg-8 col-sm-8 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="800ms">
+                    <figure class="team-member1 col-md-8 col-lg-8 col-sm-8 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="800ms">
                         <div>
-                            <img width="100%" style="height: 640px;" src="img/team/newdesktop/desktop6.jpg" alt="Team Member">
+                            <img class="imageDesk" width="100%" style="height: 640px;" src="img/team/newdesktop/desktop6.jpg" alt="Team Member">
                             <!-- <figcaption class="overlay">
-    
-                                <h5 style="margin-top: 30px;" >Dashboard View</h5>
+                                <h5 style="margin-top: 30px;">Dashboard View</h5>
                                 <a class="fancybox" rel="works" title="Desktop View Full Screen" href="img/team/desktop/desktop1copy.jpg"><i style="font-size: 30px;" class="fa fa-eye fa-lg"></i></a>
-                                
                                 <p>sample text</p>
                             </figcaption> -->
                         </div>
-    
                         <!-- <h4>John Filmr Doe</h4>
                         <span>Managing Director</span> -->
                     </figure>
@@ -396,7 +410,7 @@
 
                     <figure class="team-member col-md-4 col-lg-4 col-sm-4 col-xs-12 text-center wow fadeInUp animated" data-wow-duration="800ms">
                         <div style="margin-top: 45px;" >
-                            <img width="100%" style="height: 540px;" src="img/team/newdesktop/dektop2.jpg" alt="Team Member">
+                            <img class="imageMobile" width="100%" style="height: 500px;" src="img/team/newdesktop/dektop2.jpg" alt="Team Member">
                             <!-- <figcaption class="overlay">
     
                                 <h5 style="margin-top: 30px;" >Dashboard View</h5>
@@ -466,7 +480,7 @@
 
                 <div class="row" style="display: flex; justify-content: space-between;" >
 
-                    <figure class="mix work-item wholesale">
+                    <figure class="mix work-item wholesale col-md-4 col-lg-4 col-xs-12 col-sm-12">
                         <img width="100%" height="80%" src="img/works/wholesaleBill1.jpeg" alt="">
                         <figcaption class="overlay">
                             <a class="fancybox" rel="works" title="Wholesale Bill 1" href="img/works/wholesaleBill1.jpeg"><i
@@ -478,7 +492,7 @@
                        
                     </figure>
         
-                    <figure class="mix work-item retail">
+                    <figure class="mix work-item retail col-md-4 col-lg-4 col-xs-12 col-sm-12">
                         <img width="100%" height="80%" src="img/works/retailBill1.jpeg" alt="">
                         <figcaption class="overlay">
                             <a class="fancybox" rel="works" title="Retail Bill 1" href="img/works/retailBill1.jpeg"><i
@@ -488,7 +502,7 @@
                         </figcaption>
                     </figure>
         
-                    <figure class="mix work-item wholesale">
+                    <figure class="mix work-item wholesale col-md-4 col-lg-4 col-xs-12 col-sm-12">
                         <img width="100%" height="80%" src="img/works/wholesaleBill2.jpeg" alt="">
                         <figcaption class="overlay">
                             <a class="fancybox" rel="works" title="Wholesale Bill 3" href="img/works/wholesaleBill2.jpeg"><i
@@ -500,9 +514,9 @@
 
                 </div>
 
-                <div class="row" style="display: flex; justify-content: space-between; margin-top: 20px;"  >
+                <div class="row" style="display: flex; justify-content: space-between; margin-top: 20px;" >
 
-                    <figure class="mix work-item retail">
+                    <figure class="mix work-item retail col-md-4 col-lg-4 col-xs-12 col-sm-12">
                         <img width="100%"  src="img/works/retailBill2.jpeg" alt="">
                         <figcaption class="overlay">
                             <a class="fancybox" rel="works" title="Retail Bill 1" href="img/works/retailBill2.jpeg"><i
@@ -512,7 +526,7 @@
                         </figcaption>
                     </figure>
         
-                    <figure class="mix work-item wholesale">
+                    <figure class="mix work-item wholesale col-md-4 col-lg-4 col-xs-12 col-sm-12">
                         <img width="100%" height="80%" src="img/works/wholesaleBill3.jpeg" alt="">
                         <figcaption class="overlay">
                             <a class="fancybox" rel="works" title="Retail Bill 2" href="img/works/wholesaleBill3.jpeg"><i
@@ -522,7 +536,7 @@
                         </figcaption>
                     </figure>
         
-                    <figure class="mix work-item retail">
+                    <figure class="mix work-item retail col-md-4 col-lg-4 col-xs-12 col-sm-12">
                         <img width="100%" height="80%" src="img/works/retailBill3.jpeg" alt="">
                         <figcaption class="overlay">
                             <a class="fancybox" rel="works" title="Write Your Image Caption Here" href="img/works/retailBill3.jpeg"><i
@@ -809,7 +823,7 @@
                     </div> -->
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp animated" style="margin-top: 50px;" data-wow-duration="500ms"
                     data-wow-delay="600ms">
                     <div class="footer-single">
                         <h6>Useful Links</h6>
@@ -824,7 +838,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-6 col-xs-12 wow fadeInUp animated" data-wow-duration="500ms"
+                <div class="col-md-3 col-sm-6 col-xs-6 wow fadeInUp animated" style="margin-top: 50px;" data-wow-duration="500ms"
                     data-wow-delay="900ms">
                     <div class="footer-single">
                         <h6>Support</h6>
