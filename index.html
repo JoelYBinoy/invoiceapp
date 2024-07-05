@@ -124,6 +124,32 @@
   animation-play-state: paused;
 }
 
+
+/* Desktop Button CSS */
+
+.desktopButton {
+            width: 100%;
+            height: auto;
+            background-color: black;
+            object-fit: contain;
+            border-radius: 6px;
+        }
+
+        /* Mobile screen (up to 768px) */
+        @media (max-width: 768px) {
+            .desktopButton {
+                height: 53.4px;
+            }
+        }
+
+        /* Laptop screen (768px and above) */
+        @media (min-width: 769px) {
+            .desktopButton {
+                height: 70px;
+                
+            }
+        }
+
 </style>
 
 <body id="body">
@@ -206,7 +232,7 @@
             <div class="carousel-inner" role="listbox">
 
                 <!-- single slide -->
-                <div class="item active" style="width: 100%; height: 500px; background-image: url('img/blend_vista_original1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="item active" style="width: 100%; height: 500px; background-image: url('img/blend_vista_original5.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                     
                     <div class="carousel-caption">
                         <!-- <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: black;">
@@ -227,13 +253,13 @@
                 <!-- end single slide -->
 
                 <!-- single slide -->
-                <div class="item" style="background-image: url(img/jblogo2.png); ">
+                <div class="item" style="background-image: url(img/jblogo6.png);  background-size: cover; background-position: center; background-repeat: no-repeat;">
                     <div class="carousel-caption">
                         <h2 data-wow-duration="500ms" data-wow-delay="500ms" class="wow bounceInDown animated">
-                            Welcome To<span> Join Bills</span>!</h2>
+                            Welcome To<span> Join <span style="color: rgb(35, 149, 226);" >Bills</span> </span>!</h2>
                         <h3 data-wow-duration="500ms" class="wow slideInLeft animated"><span
                                 class="color">New Age</span>Billing Platform</h3>
-                        <p data-wow-duration="500ms" class="wow slideInRight animated">Powered By BLEND VISTA VENTURES
+                        <p style="color: #0eb493;" data-wow-duration="500ms" class="wow slideInRight animated">Powered By BLEND VISTA VENTURES
                         </p>
 
                         <!-- <ul class="social-links text-center">
@@ -522,7 +548,7 @@
 
         <div class="project-wrapper">
 
-            
+            <div class="container">
 
                 <div class="row" style="display: flex; justify-content: space-between;" >
 
@@ -560,6 +586,12 @@
 
                 </div>
 
+
+            </div>
+
+              
+            <div class="container">
+
                 <div class="row" style="display: flex; justify-content: space-between; margin-top: 20px;" >
 
                     <figure class="mix work-item retail col-md-4 col-lg-4 col-xs-12 col-sm-12">
@@ -592,6 +624,11 @@
                         </figcaption>
                     </figure>
                 </div>
+
+
+            </div>
+
+               
  
 
            
@@ -655,19 +692,45 @@
 
                         </div>
 
-                        <div class="row" style="display: flex; align-items: center; justify-content: center;" >
+                        <div class="row" style="display: flex; align-items: center; justify-content: center; margin-top: 20px;" >
 
                             <div style="display: flex; align-items: center;justify-content: center;" class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
                     
-                                <img width="100%" style="background: white; object-fit: contain;" src="./img/download/appStore.png" alt="">
+                                <!-- <img width="100%" style="background: white; object-fit: contain;" src="./img/download/appStore.png" alt=""> -->
+
+                                <button class="desktopButton"> 
+
+                                    <div class="row" >
+
+                                        <div style="display: flex; justify-content: center; align-items: center;" class="col-md-2 col-lg-2 col-xs-2 col-sm-2" >
+
+                                           
+                                                <i style="color: white; font-size: 30px; padding-left: 35px; padding-top: 8px;" class="fa-solid fa-desktop"></i>
+
+                                           
+                                            
+
+                                        </div>
+
+                                        <div class="col-md-10 col-lg-10 col-xs-10 col-sm-10" >
+
+                                            <span style="font-size: 14px; color: white;" > DOWNLOAD FOR <br> <span style="margin-top: 10px;font-weight: bolder;font-size: 24px;" > Desktop</span></span>
+                                        </div>
+                                    </div>
+                                   
+                                 </button>
                                
                     
                               
                             </div>
                 
                             <div style="display: flex; align-items: center;justify-content: center;" class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+
+                                <button style="width: 100%; height: 100%; background-color: black; object-fit: contain; border-radius: 6px;" >
+                                    <img width="100%" style="background: white; object-fit: contain;" src="././img/download/playStore1.png" alt="">
+                                </button>
                 
-                                <img width="100%" style="background: white; object-fit: contain;" src="././img/download/playStore.png" alt="">
+                               
                                
                     
                               
@@ -687,15 +750,17 @@
                                 <div class="camera"></div>
                                 <div class="">
                     
-                                    <img width="100%" style="background: white; object-fit: contain; margin-top: 50px;" src="./img/download/appStore.png" alt="">
+                                    <!-- <img width="100%" style="background: white; object-fit: contain; margin-top: 50px;" src="./img/download/appStore.png" alt="">
                                    
+
+                                    <button ></button> -->
                         
                                   
                                 </div>
                     
                                 <div class="">
                     
-                                    <img width="100%" style="background: white; object-fit: contain;" src="./img/download/playStore.png" alt="">
+                                    <img width="100%" style="background: white; object-fit: contain; margin-top: 50px;" src="./img/download/playStore.png" alt="">
                                    
                         
                                   
