@@ -29,6 +29,7 @@
 
     <link rel="stylesheet" href="./img/jblogo.png" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="icon" href="./img/jblogo1.png">
     <!-- CSS
 		================================================== -->
     <!-- Fontawesome Icon font -->
@@ -77,6 +78,50 @@
         object-fit: contain;
         height: auto;
     }
+}
+
+
+
+
+.carousel1 {
+  width: 100%;
+  max-width: 1400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  /* border: 2px solid #ccc; */
+  border-radius: 10px;
+}
+
+.carousel-track1 {
+  display: flex;
+  width: calc(800px * 6); /* Assuming 4 images */
+  animation: scroll 14s linear infinite;
+}
+
+.carousel-track1 img {
+  width: 800px;
+  height: 400px;
+  object-fit: contain;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.carousel-track1 img:hover {
+  transform: scale(1.32);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-3200px); /* Assuming 4 images * 800px */
+  }
+}
+
+.carousel1.paused .carousel-track1 {
+  animation-play-state: paused;
 }
 
 </style>
@@ -129,6 +174,7 @@
                     <li><a href="#features">Features</a></li>
                     <li><a href="#applicationview">Application View</a></li>
                     <li><a href="#invoice">Invoice View</a></li>
+                    <li><a href="#downloadNow">Download App</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
@@ -160,7 +206,7 @@
             <div class="carousel-inner" role="listbox">
 
                 <!-- single slide -->
-                <div class="item active" style="width: 100%; height: 500px; background-image: url('img/blend_vista_original.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                <div class="item active" style="width: 100%; height: 500px; background-image: url('img/blend_vista_original1.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
                     
                     <div class="carousel-caption">
                         <!-- <h2 data-wow-duration="700ms" data-wow-delay="500ms" class="wow bounceInDown animated" style="color: black;">
@@ -583,11 +629,121 @@
 
 
 
+    <!-- Download Ap Section -->
+
+    <section id="downloadNow"  class="contact works clearfix" style="background-color: white;">
+
+           
+        <div class="container" style="background-color:white">
+            <div class="sec-title text-center">
+                <h2>Download The Application</h2>
+                <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
+            </div>
+
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div style=" margin-top: 35px;" class="col-md-6 col-lg-6 col-sm-12 col-xs-12" >
+
+                        <div>
+
+                            <h2 style="font-weight: bolder; text-align: center;" >Start Using Join Bills App Now For Free</h2>
+
+                        <h1 style="font-weight: bolder; margin-top: 60px; text-align: center;" >Download Now</h1>
+
+                        </div>
+
+                        <div class="row" style="display: flex; align-items: center; justify-content: center;" >
+
+                            <div style="display: flex; align-items: center;justify-content: center;" class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                    
+                                <img width="100%" style="background: white; object-fit: contain;" src="./img/download/appStore.png" alt="">
+                               
+                    
+                              
+                            </div>
+                
+                            <div style="display: flex; align-items: center;justify-content: center;" class="col-md-6 col-lg-6 col-xs-6 col-sm-6">
+                
+                                <img width="100%" style="background: white; object-fit: contain;" src="././img/download/playStore.png" alt="">
+                               
+                    
+                              
+                            </div>
+
+                        </div>
+
+                        
+
+                    </div>
+
+                    <div style="display: flex; align-items: center; justify-content: center; margin-top: 35px;" class="col-md-6 col-lg-6 col-sm-12 col-xs-12" >
+
+
+                        <div class="phoneContainer">
+                            <div class="screen">
+                                <div class="camera"></div>
+                                <div class="">
+                    
+                                    <img width="100%" style="background: white; object-fit: contain; margin-top: 50px;" src="./img/download/appStore.png" alt="">
+                                   
+                        
+                                  
+                                </div>
+                    
+                                <div class="">
+                    
+                                    <img width="100%" style="background: white; object-fit: contain;" src="./img/download/playStore.png" alt="">
+                                   
+                        
+                                  
+                                </div>
+                            </div>
+
+                          
+                            </div>
+
+                              <!-- <div class="phoneContainer" >
+
+                                <img style="object-fit: contain;" width="100%" src="./img/team/newdesktop/desktop1.jpg" alt="">
+                            </div> -->
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+    <div style="margin-top: 20px;" class="carousel1">
+        <div class="carousel-track1">
+          <img src="./img/team/newdesktop/desktop1.jpg" alt="Image 1">
+          <img src="./img/team/newdesktop/dektop2.jpg" alt="">
+          <img src="./img/team/newdesktop/desktop3.jpg" alt="Image 3">
+          <img src="./img/team/newdesktop/desktop4.jpg" alt="Image 4">
+          <img src="./img/team/newdesktop/desktop5.jpg" alt="Image 2">
+          <img src="./img/team/newdesktop/desktop6.jpg" alt="Image 3">
+          <img src="./img/team/newdesktop/desktop4.jpg" alt="Image 4">
+          <img src="./img/team/newdesktop/desktop5.jpg" alt="Image 2">
+          <img src="./img/team/newdesktop/desktop6.jpg" alt="Image 3">
+          <img src="./img/team/newdesktop/desktop1.jpg" alt="Image 1">
+          <img src="./img/team/newdesktop/dektop2.jpg" alt="">
+          <img src="./img/team/newdesktop/desktop3.jpg" alt="Image 3">
+          <img src="./img/team/newdesktop/desktop4.jpg" alt="Image 4">
+          <!-- Add more images as needed -->
+        </div>
+      </div>
+    </div>
+
+</section>
+
 
     <!-- COntact Us Section -->
 
-    <section id="contact"  class="contact works clearfix" style="background-color: #f4f7f9;">
-        <div class="container" style="background-color: #f4f7f9;">
+    <section id="contact"  class="contact works clearfix" style="background-color: white">
+        <div class="container" style="background-color: white">
             <div class="sec-title text-center">
                 <h2>Contact Us</h2>
                 <div class="devider"><i class="fa fa-heart-o fa-lg"></i></div>
@@ -600,43 +756,63 @@
 
             <div class="row mt-5" >
 
-                <div class="col-lg-12">
-                  <div class="info" style="background-color: #f4f7f9;">
-                    <div class="address">
-                        <i style="color: white;" class="fa-solid fa-location-dot"></i>
-                      <h4>Location:</h4>
-                      <p>G3 Pure business Center <br>
-                    Kochi <br>
-                Kerala <br>
-            682018</p>
+               
+                  <div class="info" style="background-color: white">
+
+                    <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12" >
+
+                        <div class="address">
+                            <i style="color: white;" class="fa-solid fa-location-dot"></i>
+                          <h4>Location:</h4>
+                          <p>G3 Pure business Center <br>
+                        Kochi <br>
+                    Kerala <br>
+                682018</p>
+                        </div>
+
                     </div>
+
+                    <div  class="col-md-4 col-lg-4 col-sm-6 col-xs-12"  >
+                        
+                        <div class="email">
+                            <i style="color: white;" class="fa-regular fa-envelope"></i>
+                          <h4>Gmail:</h4>
+                          
+                          <p>joinbillsdirector@gmail.com</p>
+                        </div>
+                    </div>
+
+                    <div  class="col-md-4 col-lg-4 col-sm-6 col-xs-12"  >
+
+                        <div class="phone">
+                            <i style="color: white;" class="fa-solid fa-phone"></i>
+                          <h4>Call:</h4>
+                          
+                            <p><a style="color: black;" href="tel:8113902205">8113902205</a></p>
+                          
+                         
+                        </div>
+                        
+                    </div>
+
+                   
       
-                    <div class="email">
-                        <i style="color: white;" class="fa-regular fa-envelope"></i>
-                      <h4>Gmail:</h4>
-                      
-                      <p>joinbillsdirector@gmail.com</p>
-                    </div>
+                   
       
-                    <div class="phone">
-                        <i style="color: white;" class="fa-solid fa-phone"></i>
-                      <h4>Call:</h4>
-                      <div style="display: flex;align-items: center;justify-content: center;width: 120px;" >
-                        <a style="color: black;" href="tel:8113902205">8113902205</a>
-                      </div>
-                     
-                    </div>
+                  
       
                    
       
                   </div>
       
-                </div>
+                
             </div>
 
         </div>
 
         </section>
+
+       
 
    
 
@@ -784,7 +960,7 @@
         ==================================== -->
 
 
-    <footer id="footer" class="footer">
+    <footer style="margin-top: 30px;" id="footer" class="footer">
         <div class="container">
             <div class="row">
 
@@ -923,6 +1099,33 @@
             button.textContent = 'View All';
         }
     });
+
+
+
+
+
+// Script for carousal
+
+document.addEventListener('DOMContentLoaded', () => {
+  const carousel = document.querySelector('.carousel1');
+  const images = document.querySelectorAll('.carousel-track1 img');
+
+  // Duplicate the images to create a seamless infinite scroll
+  images.forEach(img => {
+    const clone = img.cloneNode();
+    document.querySelector('.carousel-track1').appendChild(clone);
+  });
+
+  // Add event listeners to pause and resume scrolling on hover
+  images.forEach(img => {
+    img.addEventListener('mouseenter', () => {
+      carousel.classList.add('paused');
+    });
+    img.addEventListener('mouseleave', () => {
+      carousel.classList.remove('paused');
+    });
+  });
+});
 
     </script>
     <!-- Custom Functions -->

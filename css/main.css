@@ -920,11 +920,101 @@ label.error {
 }
 
 .contact .info .email,
-.contact .info .phone {
-  margin-top: 40px;
+.contact .info .phone,
+.contact .info .address{
+  margin-top: 15px;
 }
 
 
+
+/* Download Option Css */
+
+.phoneContainer {
+  width: 205px;
+  height: 350px;
+  background-color: black;
+  border-radius: 20px;
+  position: relative;
+}
+
+.screen {
+  width: 200px;
+  height: 340px;
+  background: white;
+ 
+  border-radius: 20px;
+  position: absolute;
+  top: 4px;
+  bottom: 2px;
+  right: 2px;
+  left: 2px;
+  box-sizing: border-box;
+}
+
+.camera {
+  width: 80px;
+  background-color: black;
+  position: absolute;
+  height: 20px;
+  top: 4%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  border-radius: 25px;
+  transition: 0.3s;
+  animation-name: callTransition;
+  animation-duration: 1.9s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+}
+
+@keyframes callTransition {
+  15% {
+    width: 40px;
+  }
+
+  95% {
+    width: 95px;
+    background-color: darkblue;
+  }
+}
+
+.camera:before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background-color: rgb(19, 19, 51);
+  position: absolute;
+  border-radius: 50%;
+  left: 5px;
+  top: 2px;
+}
+
+.camera:after {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: lightgreen;
+  position: absolute;
+  border-radius: 50%;
+  right: 5px;
+  top: 6px;
+}
+
+.appsContainer {
+  margin-top: 10px;
+  position: absolute;
+  right: 50%;
+  top: 40%;
+  transform: translate(50%, -50%);
+}
+
+.widgets {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  box-sizing: border-box;
+}
 
 
 
