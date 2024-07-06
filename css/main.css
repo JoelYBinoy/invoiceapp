@@ -184,7 +184,7 @@ body > section,
 }
 
 #slider .carousel-inner .item {
-  background-size: cover;
+  background-size: contain;
   background-color: #062033;
   height: 100%;
  
