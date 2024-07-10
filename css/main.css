@@ -747,18 +747,24 @@ label.error {
   
 
   width: 340px;
-  height: 450px;
+  height: 350px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-left: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
 }
 
 .pricing_mobile{
 
-
+  border-radius: 10px;
+  margin-left: 20px;
   background-color: white; 
   width: 340px;
-  height: 450px;
+  height: 350px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-left: 30px;
+  /* margin-left: 30px; */
+
+  margin-top: 30px;
  
 
 }
